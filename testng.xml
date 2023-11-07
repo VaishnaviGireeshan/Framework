@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test" parallel="classes">
+		<classes>
+			<class name="com.naveenAutomationPageTest.AccountPageTest" />
+			<class name="com.naveenAutomationPageTest.AddressBookEntriesPageTest" />
+			<class
+				name="com.naveenAutomationPageTest.ForgottenPasswordPageTest" />
+			<class name="com.naveenAutomationPageTest.LoginPageTest" />
+			<class name="com.naveenAutomationPageTest.LogoutPageTest" />
+			<class
+				name="com.naveenAutomationPageTest.ViewProductReturnsPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
