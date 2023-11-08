@@ -86,6 +86,11 @@ public class AccountPageTest extends TestBase {
 				"Success: Your newsletter subscription has been successfully updated!",
 				"News letter Subscription update is not done!!!");
 	}
+	
+	@Test
+	public void validateDisplay() {
+		System.out.println("Test1");
+	}
 
 	@AfterMethod
 	public void quitBrowser() {
