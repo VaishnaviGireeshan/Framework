@@ -154,6 +154,11 @@ public class AccountPageTest extends TestBase {
 		Assert.assertEquals(transactionsPage.getTransactionsPageText(), "Your Transactions",
 				"Transactions Page, Access Failed!!!");
 	}
+	
+	@Test
+	public void validateDisplay() {
+		System.out.println("Test1");
+	}
 
 	@AfterMethod
 	public void quitBrowser() {
