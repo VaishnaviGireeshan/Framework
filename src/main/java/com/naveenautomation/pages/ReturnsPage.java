@@ -1,41 +1,31 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class ReturnsPage extends Page {
+public class ReturnsPage extends TestBase {
 
-	private static final String PAGE_URL = "/opencart/index.php?route=account/return";
-
-	public ReturnsPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
+	public ReturnsPage() {
+		PageFactory.initElements(wd, this);
 	}
 
-	private static By viewProductReturnsPageText = By.cssSelector("#content>h1");
-	private static By productReturnsContinueBtn = By.xpath("//a[text()='Continue']");
+	@FindBy(css = "#content>h1")
+	WebElement viewProductReturnsPageText;
+
+	@FindBy(xpath = "//a[text()='Continue']")
+	WebElement productReturnsContinueBtn;
 
 	public String getViewProductReturnsPageText() {
-		return ((ProxyDriver) wd).getText(viewProductReturnsPageText);
+		return viewProductReturnsPageText.getText();
 
 	}
 
 	public AccountPage clickProductReturnsContinueBtn() {
-		((ProxyDriver) wd).click(productReturnsContinueBtn);
-		return new AccountPage(wd, false);
-	}
-
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
-	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+		productReturnsContinueBtn.click();
+		return new AccountPage();
 	}
 
 }

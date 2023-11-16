@@ -16,27 +16,25 @@ public class ForgottenPasswordPageTest extends TestBase {
 	@BeforeMethod
 	public void launchBrowser() {
 		initialise();
-		loginPage = new LoginPage(wd, false).get();
+		loginPage = new LoginPage();
 	}
 
-	
+	public void validateUserCanNavigateToForgottenPasswordPage() {
+		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
+		Assert.assertEquals(forgottenPasswordPage.getforgetPwdPageText(), "Forgot Your Password?",
+				"Navigation to Forgotten Password Page Failed!!!");
+	}
+
 	@Test
 	public void validateUserWillGetConfirmationLinkUsingValidEmail() {
 		// Click on the "Forgotten Password" link on the login page
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
+		forgottenPasswordPage.enterEmail("SamStark@gmail.com");
+		loginPage = forgottenPasswordPage.clickContinueBtnWithVaidEmail();
 
-		// Verify if the page banner text matches
-		Assert.assertEquals(forgottenPasswordPage.getForgottenPasswordPageBannerText(), "Forgot Your Password?",
-				"Forgotten Password PageBanner text doesn't match!!!");
-		forgottenPasswordPage.enterEmail("TonyStark@gmail.com");
-
-		forgottenPasswordPage.clickContinueBtn();
-
-		// Verify if the warning message matches the expected message
-		Assert.assertEquals(forgottenPasswordPage.getForgottenPasswordPageSuccessMessage(),
+		Assert.assertEquals(loginPage.getSuccessAlertText(),
 				"An email with a confirmation link has been sent your email address.",
-				"User will not get confirmation link with valid email address!!!");
-
+				"Password modification with valid email address failed!!!");
 	}
 
 	@Test
@@ -44,17 +42,13 @@ public class ForgottenPasswordPageTest extends TestBase {
 		// Click on the "Forgotten Password" link on the login page
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
 
-		// Verify if the page banner text matches
-		Assert.assertEquals(forgottenPasswordPage.getForgottenPasswordPageBannerText(), "Forgot Your Password?",
-				"Forgotten Password PageBanner text doesn't match!!!");
-
 		// Verify if the page banner text matches "Forgot Your Password?"
-		forgottenPasswordPage.enterEmail("Tonyds@gmail.com");
+		forgottenPasswordPage.enterEmail("Samds@gmail.com");
 
 		forgottenPasswordPage.clickContinueBtn();
 
 		// Verify if the warning message matches the expected message
-		Assert.assertEquals(forgottenPasswordPage.getForgottenPasswordPageWarningMessage(),
+		Assert.assertEquals(loginPage.getDangerAlertText(),
 				"Warning: The E-Mail Address was not found in our records, please try again!",
 				"User is able to get confirmation link with invalid email address");
 

@@ -1,22 +1,23 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class RecurringPaymentsPage extends Page{
-	private static final String PAGE_URL = "/opencart/index.php?route=account/recurring";
-	public RecurringPaymentsPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-		
-	}
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+import com.naveenautomation.base.TestBase;
+
+public class RecurringPaymentsPage extends TestBase {
+
+	public RecurringPaymentsPage() {
+		PageFactory.initElements(wd, this);
+
 	}
 
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+	@FindBy(xpath = "//h1[text()='Recurring Payments']")
+	WebElement recurringPaymentsPageText;
+
+	public String getRecurringPaymentsPageText() {
+		return recurringPaymentsPageText.getText();
 	}
+
 }

@@ -4,12 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 import com.naveenautomation.base.TestBase;
+import com.naveenautomation.navigationBars.ConsumerSideNavigationBar;
 import com.naveenautomation.pages.AccountPage;
-import com.naveenautomation.pages.ConsumerSideNavigationBar;
 import com.naveenautomation.pages.LoginPage;
 import com.naveenautomation.pages.ReturnsPage;
-import com.naveenautomation.pages.SideNavigationBar;
 
 public class ViewProductReturnsPageTest extends TestBase {
 	LoginPage loginPage;
@@ -19,18 +19,24 @@ public class ViewProductReturnsPageTest extends TestBase {
 	@BeforeMethod
 	public void launchBrowser() {
 		initialise();
-		loginPage = new LoginPage(wd, false).get();
+		loginPage = new LoginPage();
 
 	}
 
 	@Test
-	public void validateUserIsInViewProductReturnsPage() {
-		accountPage = (AccountPage) loginPage.submitLogin("TonyStark@gmail.com", "Tony12345");
-		viewProductReturnsPage =(ReturnsPage) new SideNavigationBar(wd, false)
-				.OpenPageByClickOnSideNavBar(ConsumerSideNavigationBar.RETURNS);
+	public void validateNavigationToViewProductReturnsPage() {
+		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
+		viewProductReturnsPage = accountPage.clickProductReturns(ConsumerSideNavigationBar.RETURNS);
 		Assert.assertEquals(viewProductReturnsPage.getViewProductReturnsPageText(), "Product Returns",
-				"User is not in Product Returns Page");
+				"NavigationToViewProductReturnsPage Failed!!!");
+
+	}
+
+	@Test
+	public void validateNavigationBackToAccountPage() {
+		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
+		viewProductReturnsPage = accountPage.clickProductReturns(ConsumerSideNavigationBar.RETURNS);
 		accountPage = viewProductReturnsPage.clickProductReturnsContinueBtn();
-		Assert.assertEquals(accountPage.getMyAccouuntText(), "My Account", "User is not navigating to My Account page");
+		Assert.assertEquals(accountPage.getMyAccouuntText(), "My Account", "Navigation Back To AccountPage Failed!!!");
 	}
 }

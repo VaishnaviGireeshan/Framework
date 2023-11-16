@@ -1,32 +1,39 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class HomePage extends Page {
-	private static final String PAGE_URL = "/opencart/index.php?route=common/home";
-	public HomePage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
+public class HomePage extends TestBase {
+
+	public HomePage() {
+		PageFactory.initElements(wd, this);
 
 	}
 
-	private static By homePageSlideShow = By.cssSelector("#slideshow0 > div");
+	@FindBy(css = "#slideshow0 > div")
+	WebElement homePageSlideShow;
+	@FindBy(css = "ul.dropdown-menu-right>li:first-of-type>a")
+	WebElement registrationLink;
+	@FindBy(css = "span.hidden")
+	WebElement myAcLink;
 
 	public boolean isSlideShowDisplayed() {
-		return ((ProxyDriver) wd).isDisplayed(homePageSlideShow);
+		return homePageSlideShow.isDisplayed();
 
 	}
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+
+//	public RegisterAccountPage navigateToRegisterAcPage(ConsumerHomeTopNavigationBar homeTopNavItem ) {
+//		selectingItemFromHomeTopConsumerNav(homeTopNavItem);
+//		return new RegisterAccountPage();
+//	}
+	public RegisterAccountPage navigateToRegisterAcPage() {
+		myAcLink.click();
+		registrationLink.click();
+		return new RegisterAccountPage();
+
 	}
 
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
-	}
 }

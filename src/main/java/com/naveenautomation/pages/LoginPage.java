@@ -1,66 +1,80 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class LoginPage extends Page {
+public class LoginPage extends TestBase {
 
-	private static final String PAGE_URL = "/opencart/index.php?route=account/login";
-
-	public LoginPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
+	public LoginPage() {
+		PageFactory.initElements(wd, this);
 	}
 
-//Locate and map web elements in the HTML page to corresponding WebElement fields in the class. 
-	private static By emailInput = By.id("input-email");
-	private static By passwordInput = By.id("input-password");
-	private static By loginBtn = By.cssSelector("input[type='Submit']");
-	private static By alertBanner = By.cssSelector(".alert-danger");
-	private static By forgottenPwLink = By.cssSelector("#column-right>div>a:nth-of-type(3)");
+	@FindBy(id = "input-email")
+	WebElement emailInput;
 
-// methods to interact with these elements
+	@FindBy(id = "input-password")
+	WebElement pwdInput;
+
+	@FindBy(css = "input[value='Login']")
+	WebElement clickBtn;
+
+	@FindBy(css = "div.alert-danger ")
+	WebElement dangerAlertText;
+
+	@FindBy(css = "div.alert-success")
+	WebElement successAlertText;
+
+	@FindBy(xpath = "//a[text()='Forgotten Password'][1]")
+	WebElement forgottenPwLink;
+
+	@FindBy(xpath = "//a[text()='Continue']")
+	WebElement registerAcBtn;
+
+	@FindBy(xpath = "//a[text()='Continue']")
+	WebElement continueButton;
+
+/// Method to enter an email in the email input field
 	public void enterEmail(String email) {
-		((ProxyDriver) wd).sendKeys(emailInput, email);
-
+		emailInput.sendKeys(email);
 	}
 
-	public void enterPassword(String password) {
-		((ProxyDriver) wd).sendKeys(passwordInput, password);
+	// Method to enter a password in the password input field
+	public void enterpwd(String password) {
+		pwdInput.sendKeys(password);
 	}
 
-	public GeneralPage submitLogin(String email, String password) {
+	public AccountPage submitLogin(String email, String password) {
 		enterEmail(email);
-		enterPassword(password);
-		((ProxyDriver) wd).click(loginBtn);
-		return this.waitForPageToLoad(AccountPage.class,LoginPage.class);
+		enterpwd(password);
+		clickBtn.click();
+		return new AccountPage();
 	}
 
-	public String getAlertText() {
-		return ((ProxyDriver) wd).getText(alertBanner);
+	public String getSuccessAlertText() {
+		return successAlertText.getText();
+	}
+
+	public String getDangerAlertText() {
+		return dangerAlertText.getText();
 	}
 
 	public ForgottenPasswordPage clickForgottenPasswordPageLink() {
-		((ProxyDriver) wd).click(forgottenPwLink);
-		return new ForgottenPasswordPage(wd, true);
+		forgottenPwLink.click();
+		return new ForgottenPasswordPage();
 	}
 
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+	public RegisterAccountPage clickRegisterAcBtn() {
 
-	}
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+		registerAcBtn.click();
+
+		return new RegisterAccountPage();
 	}
 
-
-	@Override
-	public LoginPage get() {
-		return (LoginPage) super.get();
+	public RegisterAccountPage clickContinueBtn() {
+		continueButton.click();
+		return new RegisterAccountPage();
 	}
 }

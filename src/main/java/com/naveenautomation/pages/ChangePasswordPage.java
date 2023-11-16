@@ -1,47 +1,41 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class ChangePasswordPage extends Page {
-	private static final String PAGE_URL = "/opencart/index.php?route=account/password";
+public class ChangePasswordPage extends TestBase {
 
-	public ChangePasswordPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-		// TODO Auto-generated constructor stub
+	public ChangePasswordPage() {
+		PageFactory.initElements(wd, this);
+
 	}
 
 	// Locate and map web elements in the HTML page to corresponding WebElement
 	// fields in the class.
 
-	private static By passwordInput = By.id("input-password");
-	private static By confirmPasswordInput = By.id("input-confirm");
-	private static By changePwSubmitBtn = By.cssSelector("input[type='submit']");
+	@FindBy(id = "input-password")
+	WebElement passwordInput;
+
+	@FindBy(id = "input-confirm")
+	WebElement confirmPasswordInput;
+
+	@FindBy(css = "input[type='submit']")
+	WebElement changePwSubmitBtn;
 
 	public void enterPassword(String password) {
-		((ProxyDriver) wd).sendKeys(passwordInput, password);
+		passwordInput.sendKeys(password);
 	}
 
 	public void enterConfirmPassword(String confirmPassword) {
-		((ProxyDriver) wd).sendKeys(confirmPasswordInput, confirmPassword);
+		confirmPasswordInput.sendKeys(confirmPassword);
 	}
 
 	public AccountPage clickPwContinueBtn() {
-		((ProxyDriver) wd).click(changePwSubmitBtn);
-		return new AccountPage(wd, true);
+		changePwSubmitBtn.click();
+		return new AccountPage();
 	}
 
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
-	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
-	}
 }

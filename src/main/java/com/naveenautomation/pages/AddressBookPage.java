@@ -1,111 +1,120 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class AddressBookPage extends Page {
+public class AddressBookPage extends TestBase {
 
-	private static final String PAGE_URL = "/opencart/index.php?route=account/address";
-
-	public AddressBookPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-
+	public AddressBookPage() {
+		PageFactory.initElements(wd, this);
 	}
 
-	private static By addressBookPageText = By.xpath("//h2[text()='Address Book Entries']");
-	private static By newAddressBtn = By.xpath("//a[text()='New Address']");
-	private static By inputFirstName = By.cssSelector("#input-firstname");
-	private static By inputLastName = By.cssSelector("#input-lastname");
-	private static By inputAddress = By.cssSelector("#input-address-1");
-	private static By inputCity = By.cssSelector("#input-city");
-	private static By inputPostcode = By.cssSelector("#input-postcode");
-	private static By inputCountry = By.cssSelector("#input-country");
-	private static By inputZone = By.cssSelector("#input-zone");
-	private static By continueBtn = By.cssSelector("input[value='Continue']");
-	private static By addressAddedSuccessMsg = By.xpath("//div[contains(@class, 'alert-success')]");
-	private static By deleteDefaultAddressBtn = By.xpath("//a[text()='Delete']");
-	private static By getDeleteAddessMessage = By.xpath("//a[text()='Delete']");
-	private static By deleteDefaultAddressUnsuccessfullMessage = By
-			.xpath("//div[text()=' Warning: You can not delete your default address!']");
+	@FindBy(xpath = "//h2[text()='Address Book Entries']")
+	WebElement addressBookPageText;
+
+	@FindBy(xpath = "//a[text()='New Address']")
+	WebElement newAddressBtn;
+
+	@FindBy(css = "#input-firstname")
+	WebElement inputFirstName;
+
+	@FindBy(css = "#input-lastname")
+	WebElement inputLastName;
+
+	@FindBy(css = "#input-address-1")
+	WebElement inputAddress;
+
+	@FindBy(css = "#input-city")
+	WebElement inputCity;
+
+	@FindBy(css = "#input-postcode")
+	WebElement inputPostcode;
+
+	@FindBy(css = "#input-country")
+	
+	WebElement inputCountry;
+
+	@FindBy(css = "#input-zone")
+	WebElement inputZone;
+
+	@FindBy(css = "input[value='Continue']")
+	WebElement continueBtn;
+
+	@FindBy(xpath = "//div[contains(@class, 'alert-success')]")
+	WebElement addressAddedSuccessMsg;
+
+	@FindBy(xpath = "//a[text()='Delete']")
+	WebElement deleteDefaultAddressBtn;
+
+	@FindBy(xpath = "//a[text()='Delete']")
+	WebElement getDeleteAddessMessage;
+
+	@FindBy(xpath = "//div[text()=' Warning: You can not delete your default address!']")
+	WebElement deleteDefaultAddressUnsuccessfulMessage;
 
 	public String getaddressBookEntriesPageText() {
-		return ((ProxyDriver) wd).getText(addressBookPageText);
+		return addressBookPageText.getText();
 	}
 
 	public void clickAddNewAddress() {
-		((ProxyDriver) wd).click(newAddressBtn);
+		newAddressBtn.click();
 	}
 
 	public void enterFirstName(String firstName) {
-		((ProxyDriver) wd).sendKeys(inputFirstName, firstName);
+		inputFirstName.sendKeys(firstName);
 	}
 
 	public void enterLastName(String lastName) {
-		((ProxyDriver) wd).sendKeys(inputLastName, lastName);
+		inputLastName.sendKeys(lastName);
 	}
 
 	public void enterAddress(String address) {
-		((ProxyDriver) wd).sendKeys(inputAddress, address);
+		inputAddress.sendKeys(address);
 
 	}
 
 	public void enterCity(String city) {
-		((ProxyDriver) wd).sendKeys(inputCity, city);
+		inputCity.sendKeys(city);
 
 	}
 
 	public void enterPostcode(String postalCode) {
-		((ProxyDriver) wd).sendKeys(inputPostcode, postalCode);
+		inputPostcode.sendKeys(postalCode);
 	}
 
-	public void enterCountry(String visibleText) {
-		WebElement countryDropdown = ((ProxyDriver) wd).waitForElementToBeVisible(inputCountry, 10);
-		((ProxyDriver) wd).selectItemFromDropDown(countryDropdown, visibleText);
+	public void selectCountry(String visibleText) {
+		selectFromDropDown(inputCountry, visibleText);
 	}
 
-	public void enterZone(String visibleText) {
-		WebElement zoneDropdown = ((ProxyDriver) wd).waitForElementToBeVisible(inputZone, 10);
-		((ProxyDriver) wd).selectItemFromDropDown(zoneDropdown, visibleText);
+	public void selectRegion(String visibleText) {
+		selectFromDropDown(inputZone, visibleText);
 	}
 
 	public void clickContinueBtn() {
-		((ProxyDriver) wd).click(continueBtn);
+		continueBtn.click();
 	}
 
 	public String getAddressAddedSuccessMsg() {
-		return ((ProxyDriver) wd).getText(addressAddedSuccessMsg);
+		return addressAddedSuccessMsg.getText();
 	}
 
-	/*******************************************************/
-	public void deleteDefaultAddress() {
-		((ProxyDriver) wd).click(deleteDefaultAddressBtn);
-		((ProxyDriver) wd).acceptAlert();
-
-	}
-
-	/*******************************************************/
+	
+	 public void deleteDefaultAddress() { 
+		 deleteDefaultAddressBtn.click();
+	 
+	 }
+	 
+	
 	public String getDeleteAddressMessage() {
-		return ((ProxyDriver) wd).getText(getDeleteAddessMessage);
+		return getDeleteAddessMessage.getText();
 	}
 
 	public String getDeleteDefaultAddressUnsuccessfullMessage() {
-		return ((ProxyDriver) wd).getText(deleteDefaultAddressUnsuccessfullMessage);
+		return deleteDefaultAddressUnsuccessfulMessage.getText();
 
-	}
-
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
-	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
 	}
 
 }

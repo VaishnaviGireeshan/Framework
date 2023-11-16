@@ -1,47 +1,40 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class NewsLetterSubscriptionPage extends Page {
-	private static final String PAGE_URL = "/opencart/index.php?route=account/newsletter";
+public class NewsLetterSubscriptionPage extends TestBase {
 
-	public NewsLetterSubscriptionPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
+	public NewsLetterSubscriptionPage() {
+		PageFactory.initElements(wd, this);
 
 	}
 
-	private static By newsLetterSubsriptionPageText = By.cssSelector("#content>h1");
-	private static By newsLetterSubsriptionYesOption = By.cssSelector("label.radio-inline:first-of-type>input");
-	private static By newsLetterSubscriptionSubmitBtn = By.cssSelector("input[value='Continue']");
+	@FindBy(css = "#content>h1")
+	WebElement newsLetterSubsriptionPageText;
+
+	@FindBy(css = "label.radio-inline:first-of-type>input")
+	WebElement newsLetterSubsriptionYesOption;
+
+	@FindBy(css = "input[value='Continue']")
+	WebElement newsLetterSubscriptionSubmitBtn;
 
 	public String getNewsLetterSubsriptionPageText() {
-		return ((ProxyDriver) wd).getText(newsLetterSubsriptionPageText);
+		return newsLetterSubsriptionPageText.getText();
 
 	}
 
 	public void clickYesOption() {
-		((ProxyDriver) wd).click(newsLetterSubsriptionYesOption);
+		newsLetterSubsriptionYesOption.click();
 
 	}
 
 	public AccountPage clickNewsLetterSubscriptionSubmitBtn() {
-		((ProxyDriver) wd).click(newsLetterSubscriptionSubmitBtn);
-		return new AccountPage(wd, true);
-	}
-
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
-	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+		newsLetterSubscriptionSubmitBtn.click();
+		return new AccountPage();
 	}
 
 }

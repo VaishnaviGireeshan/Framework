@@ -1,22 +1,23 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class RewardPointsPage extends Page{
-	private static final String PAGE_URL = "/opencart/index.php?route=account/reward";
-	public RewardPointsPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-		
-	}
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+import com.naveenautomation.base.TestBase;
+
+public class RewardPointsPage extends TestBase {
+
+	public RewardPointsPage() {
+		PageFactory.initElements(wd, this);
+
 	}
 
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+	@FindBy(xpath = "//h1[text()='Your Reward Points']")
+	WebElement rewardPointsPagePageText;
+
+	public String getRewardPointsPageText() {
+		return rewardPointsPagePageText.getText();
 	}
+
 }

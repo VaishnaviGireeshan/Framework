@@ -4,12 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.naveenautomation.Utils.Utils;
 import com.naveenautomation.base.TestBase;
+import com.naveenautomation.navigationBars.ConsumerSideNavigationBar;
 import com.naveenautomation.pages.AccountPage;
 import com.naveenautomation.pages.AddressBookPage;
-import com.naveenautomation.pages.ConsumerSideNavigationBar;
 import com.naveenautomation.pages.LoginPage;
-import com.naveenautomation.pages.SideNavigationBar;
 
 public class AddressBookEntriesPageTest extends TestBase {
 
@@ -20,39 +20,53 @@ public class AddressBookEntriesPageTest extends TestBase {
 	@BeforeMethod
 	public void launchBrowser() {
 		initialise();
-		loginPage = new LoginPage(wd, false).get();
+		loginPage = new LoginPage();
 	}
 
 	@Test
 
 	public void validateUserCanNavigateToAddressBook() {
 
-		accountPage = (AccountPage) loginPage.submitLogin("TonyStark@gmail.com", "Tony12345");
-		addressBookEntriesPage = (AddressBookPage) new SideNavigationBar(wd, false)
-				.OpenPageByClickOnSideNavBar(ConsumerSideNavigationBar.ADDRESS_BOOK);
+		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
+		addressBookEntriesPage = accountPage.navigateAddressBook(ConsumerSideNavigationBar.ADDRESS_BOOK);
 		Assert.assertEquals(addressBookEntriesPage.getaddressBookEntriesPageText(), "Address Book Entries",
 
 				"Navigation to address book page failed!!!");
 
 	}
 
-	@Test
+	@Test(invocationCount = 2)
 
-	public void validateUserCanDeleteAddress() {
+	public void validateUserCanAddNewAddressToAddressBook() {
 
-		// Log in and navigate to the Product Returns page
+		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
+		addressBookEntriesPage = accountPage.navigateAddressBook(ConsumerSideNavigationBar.ADDRESS_BOOK);
 
-		accountPage = (AccountPage) loginPage.submitLogin("TonyStark@gmail.com", "Tony12345");
+		addressBookEntriesPage.clickAddNewAddress();
 
-		addressBookEntriesPage = (AddressBookPage) new SideNavigationBar(wd, false)
-				.OpenPageByClickOnSideNavBar(ConsumerSideNavigationBar.ADDRESS_BOOK);
+		addressBookEntriesPage.enterFirstName("Jon");
 
-		addressBookEntriesPage.deleteDefaultAddress();
+		addressBookEntriesPage.enterLastName("Snow");
 
-		Assert.assertEquals(addressBookEntriesPage.getDeleteDefaultAddressUnsuccessfullMessage(),
-				"Warning: You can not delete your default address!",
+		addressBookEntriesPage.enterAddress("The Great Wall");
 
-				"User is able to Delete default address!!!");
+		addressBookEntriesPage.enterCity("Woodstock");
+
+		addressBookEntriesPage.enterPostcode("l6t 2a2");
+
+		addressBookEntriesPage.selectCountry("Canada");
+		Utils.sleep(5000);
+
+		addressBookEntriesPage.selectRegion("Ontario");
+
+		// Click Continue button
+
+		addressBookEntriesPage.clickContinueBtn();
+
+		Assert.assertEquals(addressBookEntriesPage.getAddressAddedSuccessMsg(),
+				"Your address has been successfully added",
+
+				"User is not able to add new address to Address book!!!");
 
 	}
 

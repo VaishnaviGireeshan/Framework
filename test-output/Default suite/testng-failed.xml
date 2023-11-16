@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.naveenAutomationPageTest.LoginPageTest">
+      <class name="com.naveenAutomationPageTest.AccountPageTest">
         <methods>
-          <include name="launchBrowser"/>
           <include name="loggerSetup"/>
-          <include name="tearDown"/>
           <include name="quitBrowser"/>
-          <include name="validateUserCanLoginWithValidCredentials"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="validateUserCanAccessRecurringPaymentsPage"/>
         </methods>
-      </class> <!-- com.naveenAutomationPageTest.LoginPageTest -->
+      </class> <!-- com.naveenAutomationPageTest.AccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

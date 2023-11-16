@@ -1,22 +1,22 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class DownloadsPage extends Page{
-	private static final String PAGE_URL = "/opencart/index.php?route=account/download";
-	public DownloadsPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-		
-	}
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+import com.naveenautomation.base.TestBase;
+
+public class DownloadsPage extends TestBase {
+
+	public DownloadsPage() {
+		PageFactory.initElements(wd, this);
+
 	}
 
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+	@FindBy(xpath = "//h2[text()='Account Downloads']")
+	WebElement downloadsPageText;
+
+	public String getDownloadsPageText() {
+		return downloadsPageText.getText();
 	}
 }

@@ -1,58 +1,73 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class EditAccountPage extends Page {
+public class EditAccountPage extends TestBase {
 
-	private static final String PAGE_URL = "/opencart/index.php?route=account/edit";
-
-	public EditAccountPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-
+	public EditAccountPage() {
+		PageFactory.initElements(wd, this);
 	}
 
-	private static By firstNameInput = By.id("input-firstname");
-	private static By lastNameInput = By.id("input-lastNameInput");
-	private static By emailInput = By.id("input-email");
-	private static By telephoneInput = By.id("input-telephone");
-	private static By continueBtn = By.cssSelector("input[value='Continue']");
+	@FindBy(css = "input[name='firstname']")
+	public WebElement firstNameInput;
+
+	@FindBy(css = "input[name='lastname']")
+	WebElement lastNameInput;
+
+	@FindBy(css = "input[name='email']")
+	WebElement emailInput;
+
+	@FindBy(css = "input[name='telephone']")
+	WebElement telephoneInput;
+
+	@FindBy(css = "input[type='submit']")
+	WebElement submitBtn;
+
+	@FindBy(css = "div.text-danger")
+	WebElement warningMsg;
+
+	public void clearField(WebElement element) {
+		element.clear();
+	}
+
+	public void clearAllFields() {
+		firstNameInput.clear();
+		lastNameInput.clear();
+		emailInput.clear();
+		telephoneInput.clear();
+	}
 
 	public void enterFirstName(String firstName) {
-		((ProxyDriver) wd).sendKeys(firstNameInput, firstName);
+		firstNameInput.sendKeys(firstName);
+
 	}
 
-	public void enterLastName(String lasttName) {
-		((ProxyDriver) wd).sendKeys(lastNameInput, lasttName);
+	public void enterLastName(String lastName) {
+		lastNameInput.sendKeys(lastName);
+
 	}
 
-	public void enterNewEmail(String newEmail) {
-		((ProxyDriver) wd).sendKeys(emailInput, newEmail);
+	public void enterEmail(String email) {
+		emailInput.sendKeys(email);
+
 	}
 
-	public void enterTelephone(String phoneNumber) {
-		((ProxyDriver) wd).sendKeys(telephoneInput, phoneNumber);
+	public void enterTelephoneNum(String phoneNum) {
+		telephoneInput.sendKeys(phoneNum);
+
 	}
 
-	public AccountPage clickContinueBtn() {
-		((ProxyDriver) wd).click(continueBtn);
-		// return null;
-
-		return new AccountPage(wd, true);
+	public AccountPage clickSubmitBtn() {
+		submitBtn.click();
+		return new AccountPage();
 	}
 
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
-	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
+	public String getWarningMsg() {
+		return warningMsg.getText();
 	}
 
 }

@@ -1,60 +1,59 @@
 package com.naveenautomation.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.naveenautomation.proxydriver.ProxyDriver;
+import com.naveenautomation.base.TestBase;
 
-public class ForgottenPasswordPage extends Page {
+public class ForgottenPasswordPage extends TestBase {
 
-	private static final String PAGE_URL = "/opencart/index.php?route=account/forgotten";
-
-	public ForgottenPasswordPage(WebDriver wd, boolean waitForPageToLoad) {
-		super(wd, waitForPageToLoad);
-
+	public ForgottenPasswordPage() {
+		PageFactory.initElements(wd, this);
 	}
 
-	private static By forgottenPwBannerText = By.cssSelector("#content>h1");
-	private static By emailInput = By.id("input-email");
-	private static By continueBtn = By.cssSelector("input[value='Continue']");
-	private static By warningMsg = By.cssSelector("div.alert-danger");
-	private static By SuccessMsg = By.cssSelector("div.alert-success");
+	@FindBy(xpath = "//h1[text()='Forgot Your Password?']")
+	WebElement forgetPwdPageText;
 
+	@FindBy(css = "#input-email")
+	WebElement emailInput;
+
+	@FindBy(css = "input[value='Continue']")
+	WebElement continueBtn;
+
+	@FindBy(css = "#account-login>div.alert-success>i")
+	WebElement forgettenPwdSuccessMessage;
+
+	@FindBy(css = "#account-forgotten>div.alert-danger>i")
+	WebElement forgettenPwdFailedMessage;
+
+	// Method to get the text of 'Forgot Your Password?'
+	public String getforgetPwdPageText() {
+		return forgetPwdPageText.getText();
+	}
+
+	// Method to enter email in the email input field
 	public void enterEmail(String email) {
-		((ProxyDriver) wd).sendKeys(emailInput, email);
+		emailInput.sendKeys(email);
 	}
 
-	public String getForgottenPasswordPageBannerText() {
-
-		return ((ProxyDriver) wd).getText(forgottenPwBannerText);
-
+	// Method to click the 'Continue' button
+	public LoginPage clickContinueBtnWithVaidEmail() {
+		continueBtn.click();
+		return new LoginPage();
 	}
 
-	public LoginPage clickContinueBtn() {
-		((ProxyDriver) wd).click(continueBtn);
-		return new LoginPage(wd, false);
-	}
-
-	public String getForgottenPasswordPageWarningMessage() {
-		return ((ProxyDriver) wd).getText(warningMsg);
+	public void clickContinueBtn() {
+		continueBtn.click();
 
 	}
 
-	public String getForgottenPasswordPageSuccessMessage() {
-		return ((ProxyDriver) wd).getText(SuccessMsg);
-
+	// Method to get the text of the message for forgotten password failure
+	public String getforgettenPwdFailedMessage() {
+		return forgettenPwdFailedMessage.getText();
 	}
 
-	@Override
-	protected void isLoaded() {
-		if (!urlContains(wd.getCurrentUrl())) {
-			throw new Error();
-		}
+	public String getForgettenPwdSuccessMessage() {
+		return forgettenPwdSuccessMessage.getText();
 	}
-
-	@Override
-	protected String getPageURL() {
-		return getDomain() + PAGE_URL;
-	}
-
 }
