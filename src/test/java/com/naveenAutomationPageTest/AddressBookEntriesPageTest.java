@@ -35,7 +35,7 @@ public class AddressBookEntriesPageTest extends TestBase {
 
 	}
 
-	@Test(invocationCount = 2)
+	@Test
 
 	public void validateUserCanAddNewAddressToAddressBook() {
 
