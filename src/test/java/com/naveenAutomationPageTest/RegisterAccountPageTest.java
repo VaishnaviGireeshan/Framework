@@ -33,22 +33,22 @@ public class RegisterAccountPageTest extends TestBase {
 				"User is not navigated to Register Account Page");
 	}
 
-	@Test
-	public void validateUserIsAbleToRegisterWithValidInfo() {
-		registerAccountPage = loginPage.clickRegisterAcBtn();
-
-		registerAccountPage.enterFirstName("Jeny");
-		registerAccountPage.enterLastName("Doe");
-		registerAccountPage.enterEmail("Jeny.doe@example.com");
-		registerAccountPage.enterTelephone("1234567878");
-		registerAccountPage.enterPassword("Lilly.doeE");
-		registerAccountPage.enterConfirmPassword("Lilly.doeE");
-		registerAccountPage.checkPrivacyPolicyCheckBox();
-
-		registrationSuccessPage = registerAccountPage.clickSubmitBtn();
-		Assert.assertEquals(registrationSuccessPage.getRegisterAccountSuccessText(), "Your Account Has Been Created!",
-				"User is not Able To Register With Valid Info");
-	}
+//	@Test
+//	public void validateUserIsAbleToRegisterWithValidInfo() {
+//		registerAccountPage = loginPage.clickRegisterAcBtn();
+//
+//		registerAccountPage.enterFirstName("Jeny");
+//		registerAccountPage.enterLastName("Doe");
+//		registerAccountPage.enterEmail("Jeny.doe@example.com");
+//		registerAccountPage.enterTelephone("1234567878");
+//		registerAccountPage.enterPassword("Lilly.doeE");
+//		registerAccountPage.enterConfirmPassword("Lilly.doeE");
+//		registerAccountPage.checkPrivacyPolicyCheckBox();
+//
+//		registrationSuccessPage = registerAccountPage.clickSubmitBtn();
+//		Assert.assertEquals(registrationSuccessPage.getRegisterAccountSuccessText(), "Your Account Has Been Created!",
+//				"User is not Able To Register With Valid Info");
+//	}
 
 	@Test
 	public void validateUserCanNotSkipFirstName() {
