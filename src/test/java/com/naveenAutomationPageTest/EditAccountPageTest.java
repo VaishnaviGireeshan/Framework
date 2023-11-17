@@ -21,6 +21,20 @@ public class EditAccountPageTest extends TestBase {
 		initialise();
 		loginPage = new LoginPage();
 	}
+	
+	@Test
+	public void validateUserCanNavigateToEditPersonalInfo() {
+		// Login to the account
+		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
+
+		// Click on the "Edit your account information" link
+		editAccountPage = accountPage.clickEditUserInfo(ConsumerSideNavigationBar.EDIT_ACCOUNT);
+
+
+		// Verify if the success message is displayed
+		Assert.assertEquals(editAccountPage.getEditAcPageTest(),
+				"My Account Information", "User is unable to navigate to Edit account page");
+	}
 
 	@Test
 	public void validateUserCanNotSkipFirstName() {

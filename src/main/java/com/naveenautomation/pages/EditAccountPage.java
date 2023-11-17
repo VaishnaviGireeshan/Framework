@@ -29,6 +29,9 @@ public class EditAccountPage extends TestBase {
 
 	@FindBy(css = "div.text-danger")
 	WebElement warningMsg;
+	
+	@FindBy(css = "#content>h1")
+	WebElement editAccountText;
 
 	public void clearField(WebElement element) {
 		element.clear();
@@ -69,5 +72,7 @@ public class EditAccountPage extends TestBase {
 	public String getWarningMsg() {
 		return warningMsg.getText();
 	}
-
+	public String getEditAcPageTest() {
+		return editAccountText.getText();
+	}
 }
