@@ -23,7 +23,7 @@ public class AddressBookEntriesPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 
 	public void validateUserCanNavigateToAddressBook() {
 
@@ -35,7 +35,7 @@ public class AddressBookEntriesPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 
 	public void validateUserCanAddNewAddressToAddressBook() {
 

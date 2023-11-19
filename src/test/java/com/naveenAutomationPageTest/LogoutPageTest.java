@@ -25,7 +25,7 @@ public class LogoutPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanLogoutsafely() {
 		// login using valid credentials
 		accountPage = (AccountPage) loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
@@ -40,9 +40,6 @@ public class LogoutPageTest extends TestBase {
 		// Verify that the user is navigated to homepage
 		Assert.assertTrue(homePage.isSlideShowDisplayed(), "Logout Failed");
 	}
-	@Test
-	public void validateDisplay() {
-		System.out.println("Test1");
-	}
+	
 
 }

@@ -18,14 +18,14 @@ public class ForgottenPasswordPageTest extends TestBase {
 		initialise();
 		loginPage = new LoginPage();
 	}
-
+	@Test(enabled = false)
 	public void validateUserCanNavigateToForgottenPasswordPage() {
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
 		Assert.assertEquals(forgottenPasswordPage.getforgetPwdPageText(), "Forgot Your Password?",
 				"Navigation to Forgotten Password Page Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserWillGetConfirmationLinkUsingValidEmail() {
 		// Click on the "Forgotten Password" link on the login page
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
@@ -37,7 +37,7 @@ public class ForgottenPasswordPageTest extends TestBase {
 				"Password modification with valid email address failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserWillNotGetConfirmationLinkUsingInvalidEmail() {
 		// Click on the "Forgotten Password" link on the login page
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();

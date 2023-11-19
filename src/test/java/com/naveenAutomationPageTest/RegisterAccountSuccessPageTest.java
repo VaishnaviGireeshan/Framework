@@ -25,18 +25,18 @@ public class RegisterAccountSuccessPageTest extends TestBase {
 
 	}
 
-//	@Test
-//	public void validateUserCanNavigateBackToToLoginPage() {
-//
-//		registerAccountPage = loginPage.clickContinueBtn();
-//		
-//		Assert.assertEquals(registrationSuccessPage.getRegisterAccountSuccessText(), "Your Account Has Been Created!",
-//				"Navigation to Register Account Success Page Failed!!!");
-//	}
-//
-//	public void validateUserCanNavigateToContactUsPage() {
-//		registerAccountPage = loginPage.clickRegisterAcBtn();
-//		contactUsPage = registrationSuccessPage.clickContactUsLink();
-//		Assert.assertEquals(contactUsPage.getContactUsText(), "Contact Us", "Navigation to Contact Us Page Failed!!!");
-//	}
+	@Test(enabled = false)
+	public void validateUserCanNavigateBackToToLoginPage() {
+
+		registerAccountPage = loginPage.clickContinueBtn();
+		
+		Assert.assertEquals(registrationSuccessPage.getRegisterAccountSuccessText(), "Your Account Has Been Created!",
+				"Navigation to Register Account Success Page Failed!!!");
+	}
+
+	public void validateUserCanNavigateToContactUsPage() {
+		registerAccountPage = loginPage.clickRegisterAcBtn();
+		contactUsPage = registrationSuccessPage.clickContactUsLink();
+		Assert.assertEquals(contactUsPage.getContactUsText(), "Contact Us", "Navigation to Contact Us Page Failed!!!");
+	}
 }

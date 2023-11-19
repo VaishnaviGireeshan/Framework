@@ -2,8 +2,8 @@ package com.naveenautomation.base;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
@@ -13,20 +13,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-
 
 import com.naveenautomation.Utils.WebdriverEvents;
 import com.naveenautomation.browsers.Browser;
 import com.naveenautomation.environment.Environment;
 import com.naveenautomation.navigationBars.ConsumerHomeTopNavigationBar;
 import com.naveenautomation.navigationBars.ConsumerSideNavigationBar;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -35,8 +35,8 @@ public class TestBase {
 	private final Environment URL = Environment.PROD;
 	public static Logger logger;
 	public WebdriverEvents events;
-	public EventFiringWebDriver e_driver;
-	private static final boolean RUN_ON_GRID = false;
+
+	private static final boolean RUN_ON_GRID = true;
 
 	@BeforeClass
 	public void loggerSetup() {// one time setup
@@ -60,33 +60,27 @@ public class TestBase {
 
 			switch (BROWSER) {
 			case CHROME:
-				wd = WebDriverManager.chromedriver().create();
+				wd = new ChromeDriver();
 				break;
 			case EDGE:
-				wd = WebDriverManager.edgedriver().create();
+				wd = new EdgeDriver();
 				break;
 			case FIREFOX:
-				wd = WebDriverManager.firefoxdriver().create();
+				wd = new FirefoxDriver();
 				break;
 
 			default:
 				throw new IllegalArgumentException();
 			}
+			events = new WebdriverEvents();
+			wd = new EventFiringDecorator<WebDriver>(events).decorate(wd);
+
 		}
-		// Wrap the instance
-		e_driver = new EventFiringWebDriver(wd);
-
-		// Events which need to be captured
-		events = new WebdriverEvents();
-		e_driver.register(events);
-
-		// Assigning back the value to Web driver
-		wd = e_driver;
 
 		// Loading the Page
 		wd.get(URL.getUrl());
 		wd.manage().window().maximize();
-		wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		wd.manage().deleteAllCookies();
 
 	}
@@ -130,7 +124,7 @@ public class TestBase {
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 	}

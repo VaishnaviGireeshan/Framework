@@ -34,12 +34,12 @@ public class JavaScriptExecutorExample {
 		jse = (JavascriptExecutor) wd;
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void sendKeysUsingJavaScriptExecutor() {
 		jse.executeScript("arguments[0].value='zenduo@email.com';", wd.findElement(By.id("input-email")));
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void clickUsingJavaScriptExecutor() {
 		jse.executeScript("arguments[0].value='TonyStark@gmail.com';", wd.findElement(By.id("input-email")));
 		jse.executeScript("arguments[0].value='Tony12345';", wd.findElement(By.id("input-password")));

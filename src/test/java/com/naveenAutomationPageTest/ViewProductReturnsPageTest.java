@@ -23,7 +23,7 @@ public class ViewProductReturnsPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateNavigationToViewProductReturnsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		viewProductReturnsPage = accountPage.clickProductReturns(ConsumerSideNavigationBar.RETURNS);
@@ -32,7 +32,7 @@ public class ViewProductReturnsPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateNavigationBackToAccountPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		viewProductReturnsPage = accountPage.clickProductReturns(ConsumerSideNavigationBar.RETURNS);

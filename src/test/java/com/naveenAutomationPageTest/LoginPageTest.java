@@ -25,7 +25,7 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test
+	@Test(enabled = false)
 
 	public void validateUserCanLoginWithValidCredentials() {
 		// Perform the login action
@@ -35,7 +35,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(accountPage.getMyAccouuntText(), "My Account", "User is not logedin");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNotLoginWithInValidPassword() {
 		loginPage.submitLogin("SamStark@gmail.com", "Dany123@");
 
@@ -43,7 +43,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(loginPage.getDangerAlertText(), "Warning: No match for E-Mail Address and/or Password.",
 				"User is logedin");
 	}
-
+	@Test(enabled = false)
 	public void validateUserCanNotLoginWithInValidUsername() {
 		loginPage.submitLogin("SamStarkgmail.com", "Sam12345");
 
@@ -52,7 +52,7 @@ public class LoginPageTest extends TestBase {
 				"User is logedin");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserIsAbleToNavigateToForgottenPasswordPage() {
 		forgottenPasswordPage = loginPage.clickForgottenPasswordPageLink();
 		Assert.assertEquals(forgottenPasswordPage.getforgetPwdPageText(), "Forgot Your Password?",

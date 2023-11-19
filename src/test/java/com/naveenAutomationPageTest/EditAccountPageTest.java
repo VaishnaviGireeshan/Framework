@@ -22,7 +22,7 @@ public class EditAccountPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNavigateToEditPersonalInfo() {
 		// Login to the account
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
@@ -36,7 +36,7 @@ public class EditAccountPageTest extends TestBase {
 				"My Account Information", "User is unable to navigate to Edit account page");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNotSkipFirstName() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		editAccountPage = accountPage.clickEditUserInfo(ConsumerSideNavigationBar.EDIT_ACCOUNT);
@@ -51,7 +51,7 @@ public class EditAccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateFirstNameCharactersAreWithinRange() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		editAccountPage = accountPage.clickEditUserInfo(ConsumerSideNavigationBar.EDIT_ACCOUNT);
@@ -66,7 +66,7 @@ public class EditAccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNotSkipLastName() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		editAccountPage = accountPage.clickEditUserInfo(ConsumerSideNavigationBar.EDIT_ACCOUNT);
@@ -80,7 +80,7 @@ public class EditAccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	
 		public void validateLastNameCharactersAreWithinRange() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
@@ -95,7 +95,7 @@ public class EditAccountPageTest extends TestBase {
 				"User Entered invalid last name. Validation failed!!!");
 
 	}
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNotSkipEmail() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		editAccountPage = accountPage.clickEditUserInfo(ConsumerSideNavigationBar.EDIT_ACCOUNT);

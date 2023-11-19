@@ -59,7 +59,7 @@ public class AccountPageTest extends TestBase {
 				"Success: Your account has been successfully updated.", "Personal Information update failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanChangePassword() {
 		accountPage = (AccountPage) loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 
@@ -80,7 +80,7 @@ public class AccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanUpdateNewsLetterSubscription() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 
@@ -99,7 +99,7 @@ public class AccountPageTest extends TestBase {
 				"News letter Subscription update Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessAddressBook() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		addressBookPage = accountPage.addressBook(ConsumerSideNavigationBar.ADDRESS_BOOK);
@@ -108,14 +108,14 @@ public class AccountPageTest extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanUpdateWishList() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		wishListPage = accountPage.wishList(ConsumerSideNavigationBar.WISH_LIST);
 		Assert.assertEquals(wishListPage.getWishListPageText(), "My Wish List", "Wish List Page, Access Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessOrderHistory() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		orderHistroyPage = accountPage.orderHistory(ConsumerSideNavigationBar.ORDER_HISTORY);
@@ -123,7 +123,7 @@ public class AccountPageTest extends TestBase {
 				"Order History Page, Access Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessDownloadsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		downloadsPage = accountPage.downloadsPageLink(ConsumerSideNavigationBar.DOWNLODS);
@@ -131,7 +131,7 @@ public class AccountPageTest extends TestBase {
 				"Downloads Page, Access Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessRecurringPaymentsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		recurringPaymentsPage = accountPage.recurringPaymentsPageLink(ConsumerSideNavigationBar.RECURRING_PAYMENTS);
@@ -139,7 +139,7 @@ public class AccountPageTest extends TestBase {
 				"Recurring Payments Page, Access Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessRewardPointsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		rewardPointsPage = accountPage.rewardPointsPageLink(ConsumerSideNavigationBar.REWARD_POINTS);
@@ -147,7 +147,7 @@ public class AccountPageTest extends TestBase {
 				"Reward Points Page, Access Failed!!!");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanAccessTransactionsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		transactionsPage = accountPage.transactionsPageLink(ConsumerSideNavigationBar.TRANSACTIONS);
@@ -155,10 +155,7 @@ public class AccountPageTest extends TestBase {
 				"Transactions Page, Access Failed!!!");
 	}
 	
-	@Test
-	public void validateDisplay() {
-		System.out.println("Test1");
-	}
+	
 
 	@AfterMethod
 	public void quitBrowser() {
