@@ -36,7 +36,7 @@ public class TestBase {
 	public static Logger logger;
 	public WebdriverEvents events;
 
-	private static final boolean RUN_ON_GRID = true;
+	private static final boolean RUN_ON_GRID = false;
 
 	@BeforeClass
 	public void loggerSetup() {// one time setup
