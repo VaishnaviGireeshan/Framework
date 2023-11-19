@@ -1,535 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="37" passed="36" failed="1" skipped="0">
+<testng-results ignored="33" total="40" passed="0" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-15T16:39:12 EST" name="Surefire suite" finished-at="2023-11-15T16:44:54 EST" duration-ms="341407">
+  <suite started-at="2023-11-19T15:15:16 EST" name="Surefire suite" finished-at="2023-11-19T15:15:18 EST" duration-ms="2289">
     <groups>
     </groups>
-    <test started-at="2023-11-15T16:39:12 EST" name="Surefire test" finished-at="2023-11-15T16:44:54 EST" duration-ms="341407">
-      <class name="com.naveenAutomationPageTest.LoginPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:48 EST" name="loggerSetup" finished-at="2023-11-15T16:42:48 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:48 EST" name="launchBrowser" finished-at="2023-11-15T16:42:53 EST" duration-ms="4551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanLoginWithValidCredentials()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:53 EST" name="validateUserCanLoginWithValidCredentials" finished-at="2023-11-15T16:42:54 EST" duration-ms="1138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanLoginWithValidCredentials -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:54 EST" name="quitBrowser" finished-at="2023-11-15T16:42:54 EST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:54 EST" name="tearDown" finished-at="2023-11-15T16:42:54 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:54 EST" name="launchBrowser" finished-at="2023-11-15T16:42:58 EST" duration-ms="4069" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotLoginWithInValidPassword()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:58 EST" name="validateUserCanNotLoginWithInValidPassword" finished-at="2023-11-15T16:42:59 EST" duration-ms="854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotLoginWithInValidPassword -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:59 EST" name="quitBrowser" finished-at="2023-11-15T16:42:59 EST" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:59 EST" name="tearDown" finished-at="2023-11-15T16:42:59 EST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:42:59 EST" name="launchBrowser" finished-at="2023-11-15T16:43:05 EST" duration-ms="5601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserIsAbleToNavigateToForgottenPasswordPage()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:43:05 EST" name="validateUserIsAbleToNavigateToForgottenPasswordPage" finished-at="2023-11-15T16:43:06 EST" duration-ms="632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserIsAbleToNavigateToForgottenPasswordPage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:43:06 EST" name="quitBrowser" finished-at="2023-11-15T16:43:06 EST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.LoginPageTest@2235eaab]" started-at="2023-11-15T16:43:06 EST" name="tearDown" finished-at="2023-11-15T16:43:06 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.LoginPageTest -->
-      <class name="com.naveenAutomationPageTest.EditAccountPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:10 EST" name="loggerSetup" finished-at="2023-11-15T16:41:10 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:10 EST" name="launchBrowser" finished-at="2023-11-15T16:41:14 EST" duration-ms="4773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateFirstNameCharactersAreWithinRange()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:14 EST" name="validateFirstNameCharactersAreWithinRange" finished-at="2023-11-15T16:41:20 EST" duration-ms="5048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateFirstNameCharactersAreWithinRange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:20 EST" name="tearDown" finished-at="2023-11-15T16:41:20 EST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:20 EST" name="launchBrowser" finished-at="2023-11-15T16:41:25 EST" duration-ms="4982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateLastNameCharactersAreWithinRange()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:25 EST" name="validateLastNameCharactersAreWithinRange" finished-at="2023-11-15T16:41:29 EST" duration-ms="4676" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLastNameCharactersAreWithinRange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:29 EST" name="tearDown" finished-at="2023-11-15T16:41:30 EST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:41:30 EST" name="launchBrowser" finished-at="2023-11-15T16:42:01 EST" duration-ms="31733" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipEmail()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:01 EST" name="validateUserCanNotSkipEmail" finished-at="2023-11-15T16:42:19 EST" duration-ms="17516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:19 EST" name="tearDown" finished-at="2023-11-15T16:42:19 EST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:19 EST" name="launchBrowser" finished-at="2023-11-15T16:42:25 EST" duration-ms="5779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipFirstName()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:25 EST" name="validateUserCanNotSkipFirstName" finished-at="2023-11-15T16:42:28 EST" duration-ms="3571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipFirstName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:28 EST" name="tearDown" finished-at="2023-11-15T16:42:28 EST" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:28 EST" name="launchBrowser" finished-at="2023-11-15T16:42:32 EST" duration-ms="3915" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipLastName()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:32 EST" name="validateUserCanNotSkipLastName" finished-at="2023-11-15T16:42:36 EST" duration-ms="3533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipLastName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.EditAccountPageTest@503f91c3]" started-at="2023-11-15T16:42:36 EST" name="tearDown" finished-at="2023-11-15T16:42:36 EST" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.EditAccountPageTest -->
-      <class name="com.naveenAutomationPageTest.LogoutPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.LogoutPageTest@17503f6b]" started-at="2023-11-15T16:43:06 EST" name="loggerSetup" finished-at="2023-11-15T16:43:06 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.LogoutPageTest@17503f6b]" started-at="2023-11-15T16:43:06 EST" name="launchBrowser" finished-at="2023-11-15T16:43:10 EST" duration-ms="3981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanLogoutsafely()[pri:0, instance:com.naveenAutomationPageTest.LogoutPageTest@17503f6b]" started-at="2023-11-15T16:43:10 EST" name="validateUserCanLogoutsafely" finished-at="2023-11-15T16:43:14 EST" duration-ms="4686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanLogoutsafely -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.LogoutPageTest@17503f6b]" started-at="2023-11-15T16:43:14 EST" name="tearDown" finished-at="2023-11-15T16:43:14 EST" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.LogoutPageTest -->
-      <class name="com.naveenAutomationPageTest.ViewProductReturnsPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:37 EST" name="loggerSetup" finished-at="2023-11-15T16:44:37 EST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:37 EST" name="launchBrowser" finished-at="2023-11-15T16:44:42 EST" duration-ms="5319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateNavigationBackToAccountPage()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:42 EST" name="validateNavigationBackToAccountPage" finished-at="2023-11-15T16:44:45 EST" duration-ms="2580" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNavigationBackToAccountPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:45 EST" name="tearDown" finished-at="2023-11-15T16:44:45 EST" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:45 EST" name="launchBrowser" finished-at="2023-11-15T16:44:50 EST" duration-ms="4812" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateNavigationToViewProductReturnsPage()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:50 EST" name="validateNavigationToViewProductReturnsPage" finished-at="2023-11-15T16:44:54 EST" duration-ms="3728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNavigationToViewProductReturnsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.ViewProductReturnsPageTest@3b6d844d]" started-at="2023-11-15T16:44:54 EST" name="tearDown" finished-at="2023-11-15T16:44:54 EST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.ViewProductReturnsPageTest -->
-      <class name="com.naveenAutomationPageTest.AddressBookEntriesPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:31 EST" name="loggerSetup" finished-at="2023-11-15T16:40:31 EST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:31 EST" name="launchBrowser" finished-at="2023-11-15T16:40:37 EST" duration-ms="5354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAddNewAddressToAddressBook()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:37 EST" name="validateUserCanAddNewAddressToAddressBook" finished-at="2023-11-15T16:40:47 EST" duration-ms="9929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAddNewAddressToAddressBook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:47 EST" name="tearDown" finished-at="2023-11-15T16:40:47 EST" duration-ms="337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:47 EST" name="launchBrowser" finished-at="2023-11-15T16:40:52 EST" duration-ms="4546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAddNewAddressToAddressBook()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:40:52 EST" name="validateUserCanAddNewAddressToAddressBook" finished-at="2023-11-15T16:41:02 EST" duration-ms="10081" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAddNewAddressToAddressBook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:41:02 EST" name="tearDown" finished-at="2023-11-15T16:41:02 EST" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:41:02 EST" name="launchBrowser" finished-at="2023-11-15T16:41:06 EST" duration-ms="4538" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNavigateToAddressBook()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:41:06 EST" name="validateUserCanNavigateToAddressBook" finished-at="2023-11-15T16:41:10 EST" duration-ms="3215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNavigateToAddressBook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AddressBookEntriesPageTest@7098b907]" started-at="2023-11-15T16:41:10 EST" name="tearDown" finished-at="2023-11-15T16:41:10 EST" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.AddressBookEntriesPageTest -->
+    <test started-at="2023-11-19T15:15:16 EST" name="Surefire test" finished-at="2023-11-19T15:15:18 EST" duration-ms="2289">
       <class name="com.naveenAutomationPageTest.AccountPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:12 EST" name="loggerSetup" finished-at="2023-11-15T16:39:13 EST" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:16 EST" name="loggerSetup" finished-at="2023-11-19T15:15:16 EST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:13 EST" name="launchBrowser" finished-at="2023-11-15T16:39:19 EST" duration-ms="6118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessAddressBook()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:19 EST" name="validateUserCanAccessAddressBook" finished-at="2023-11-15T16:39:21 EST" duration-ms="2178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessAddressBook -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:21 EST" name="quitBrowser" finished-at="2023-11-15T16:39:21 EST" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:21 EST" name="tearDown" finished-at="2023-11-15T16:39:21 EST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:21 EST" name="launchBrowser" finished-at="2023-11-15T16:39:27 EST" duration-ms="5200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessDownloadsPage()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:27 EST" name="validateUserCanAccessDownloadsPage" finished-at="2023-11-15T16:39:29 EST" duration-ms="2354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessDownloadsPage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:29 EST" name="quitBrowser" finished-at="2023-11-15T16:39:29 EST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:29 EST" name="tearDown" finished-at="2023-11-15T16:39:29 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:29 EST" name="launchBrowser" finished-at="2023-11-15T16:39:34 EST" duration-ms="4929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessOrderHistory()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:34 EST" name="validateUserCanAccessOrderHistory" finished-at="2023-11-15T16:39:36 EST" duration-ms="2374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessOrderHistory -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:36 EST" name="quitBrowser" finished-at="2023-11-15T16:39:37 EST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:37 EST" name="tearDown" finished-at="2023-11-15T16:39:37 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:37 EST" name="launchBrowser" finished-at="2023-11-15T16:39:42 EST" duration-ms="5021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessRecurringPaymentsPage()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:42 EST" name="validateUserCanAccessRecurringPaymentsPage" finished-at="2023-11-15T16:39:44 EST" duration-ms="2226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessRecurringPaymentsPage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:44 EST" name="quitBrowser" finished-at="2023-11-15T16:39:44 EST" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:44 EST" name="tearDown" finished-at="2023-11-15T16:39:44 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:44 EST" name="launchBrowser" finished-at="2023-11-15T16:39:48 EST" duration-ms="4342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessRewardPointsPage()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:48 EST" name="validateUserCanAccessRewardPointsPage" finished-at="2023-11-15T16:39:52 EST" duration-ms="3620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessRewardPointsPage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:52 EST" name="quitBrowser" finished-at="2023-11-15T16:39:52 EST" duration-ms="246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:52 EST" name="tearDown" finished-at="2023-11-15T16:39:52 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:52 EST" name="launchBrowser" finished-at="2023-11-15T16:39:57 EST" duration-ms="4692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanAccessTransactionsPage()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:57 EST" name="validateUserCanAccessTransactionsPage" finished-at="2023-11-15T16:39:59 EST" duration-ms="2588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanAccessTransactionsPage -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:39:59 EST" name="quitBrowser" finished-at="2023-11-15T16:40:00 EST" duration-ms="219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:00 EST" name="tearDown" finished-at="2023-11-15T16:40:00 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:00 EST" name="launchBrowser" finished-at="2023-11-15T16:40:05 EST" duration-ms="4841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanChangePassword()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:05 EST" name="validateUserCanChangePassword" finished-at="2023-11-15T16:40:08 EST" duration-ms="3608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanChangePassword -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:08 EST" name="quitBrowser" finished-at="2023-11-15T16:40:08 EST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:08 EST" name="tearDown" finished-at="2023-11-15T16:40:08 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:08 EST" name="launchBrowser" finished-at="2023-11-15T16:40:13 EST" duration-ms="4604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanEditPersonalInfo()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:13 EST" name="validateUserCanEditPersonalInfo" finished-at="2023-11-15T16:40:16 EST" duration-ms="3288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanEditPersonalInfo -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:16 EST" name="quitBrowser" finished-at="2023-11-15T16:40:16 EST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:16 EST" name="tearDown" finished-at="2023-11-15T16:40:16 EST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:16 EST" name="launchBrowser" finished-at="2023-11-15T16:40:21 EST" duration-ms="4575" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanUpdateNewsLetterSubscription()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:21 EST" name="validateUserCanUpdateNewsLetterSubscription" finished-at="2023-11-15T16:40:24 EST" duration-ms="3299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanUpdateNewsLetterSubscription -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:24 EST" name="quitBrowser" finished-at="2023-11-15T16:40:24 EST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:24 EST" name="tearDown" finished-at="2023-11-15T16:40:24 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:24 EST" name="launchBrowser" finished-at="2023-11-15T16:40:29 EST" duration-ms="4456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanUpdateWishList()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:29 EST" name="validateUserCanUpdateWishList" finished-at="2023-11-15T16:40:31 EST" duration-ms="2341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanUpdateWishList -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:31 EST" name="quitBrowser" finished-at="2023-11-15T16:40:31 EST" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@15d49048]" started-at="2023-11-15T16:40:31 EST" name="tearDown" finished-at="2023-11-15T16:40:31 EST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.AccountPageTest -->
-      <class name="com.naveenAutomationPageTest.RegisterAccountPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:14 EST" name="loggerSetup" finished-at="2023-11-15T16:43:14 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:14 EST" name="launchBrowser" finished-at="2023-11-15T16:43:19 EST" duration-ms="4492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNavigateToRegisterAccount()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:19 EST" name="validateUserCanNavigateToRegisterAccount" finished-at="2023-11-15T16:43:20 EST" duration-ms="1301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNavigateToRegisterAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:20 EST" name="tearDown" finished-at="2023-11-15T16:43:20 EST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:20 EST" name="launchBrowser" finished-at="2023-11-15T16:43:26 EST" duration-ms="5810" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotEnterInvalidFirstName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:26 EST" name="validateUserCanNotEnterInvalidFirstName" finished-at="2023-11-15T16:43:29 EST" duration-ms="2500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotEnterInvalidFirstName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:29 EST" name="tearDown" finished-at="2023-11-15T16:43:29 EST" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:29 EST" name="launchBrowser" finished-at="2023-11-15T16:43:34 EST" duration-ms="4886" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotEnterInvalidLastName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:34 EST" name="validateUserCanNotEnterInvalidLastName" finished-at="2023-11-15T16:43:36 EST" duration-ms="2504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotEnterInvalidLastName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:36 EST" name="tearDown" finished-at="2023-11-15T16:43:36 EST" duration-ms="99" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:36 EST" name="launchBrowser" finished-at="2023-11-15T16:43:40 EST" duration-ms="3893" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotEnterInvalidTelephone()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:40 EST" name="validateUserCanNotEnterInvalidTelephone" finished-at="2023-11-15T16:43:45 EST" duration-ms="4489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotEnterInvalidTelephone -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:45 EST" name="tearDown" finished-at="2023-11-15T16:43:45 EST" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:45 EST" name="launchBrowser" finished-at="2023-11-15T16:43:49 EST" duration-ms="4073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipConfirmPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:49 EST" name="validateUserCanNotSkipConfirmPassword" finished-at="2023-11-15T16:43:53 EST" duration-ms="4023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipConfirmPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:53 EST" name="tearDown" finished-at="2023-11-15T16:43:53 EST" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:53 EST" name="launchBrowser" finished-at="2023-11-15T16:43:57 EST" duration-ms="3996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipEmail()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:57 EST" name="validateUserCanNotSkipEmail" finished-at="2023-11-15T16:43:59 EST" duration-ms="2127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:59 EST" name="tearDown" finished-at="2023-11-15T16:43:59 EST" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:43:59 EST" name="launchBrowser" finished-at="2023-11-15T16:44:03 EST" duration-ms="3698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipFirstName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:03 EST" name="validateUserCanNotSkipFirstName" finished-at="2023-11-15T16:44:05 EST" duration-ms="2487" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipFirstName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:05 EST" name="tearDown" finished-at="2023-11-15T16:44:06 EST" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:06 EST" name="launchBrowser" finished-at="2023-11-15T16:44:11 EST" duration-ms="5710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipLastName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:11 EST" name="validateUserCanNotSkipLastName" finished-at="2023-11-15T16:44:14 EST" duration-ms="2563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipLastName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:14 EST" name="tearDown" finished-at="2023-11-15T16:44:14 EST" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:14 EST" name="launchBrowser" finished-at="2023-11-15T16:44:18 EST" duration-ms="4325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:18 EST" name="validateUserCanNotSkipPassword" finished-at="2023-11-15T16:44:23 EST" duration-ms="4283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCanNotSkipPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:23 EST" name="tearDown" finished-at="2023-11-15T16:44:23 EST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:23 EST" name="launchBrowser" finished-at="2023-11-15T16:44:28 EST" duration-ms="4904" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCheckEDPrivacyPolicyCheckBox()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:28 EST" name="validateUserCheckEDPrivacyPolicyCheckBox" finished-at="2023-11-15T16:44:30 EST" duration-ms="2500" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserCheckEDPrivacyPolicyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:30 EST" name="tearDown" finished-at="2023-11-15T16:44:30 EST" duration-ms="240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:30 EST" name="launchBrowser" finished-at="2023-11-15T16:44:34 EST" duration-ms="4080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserIsAbleToRegisterWithValidInfo()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:34 EST" name="validateUserIsAbleToRegisterWithValidInfo" finished-at="2023-11-15T16:44:37 EST" duration-ms="2504" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:16 EST" name="launchBrowser" finished-at="2023-11-19T15:15:18 EST" duration-ms="1610" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[User is not Able To Register With Valid Info expected [Your Account Has Been Created!] but found [Register Account]]]>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User is not Able To Register With Valid Info expected [Your Account Has Been Created!] but found [Register Account]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.validateUserIsAbleToRegisterWithValidInfo(RegisterAccountPageTest.java:49)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.AccountPageTest.launchBrowser(AccountPageTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -559,45 +80,653 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserIsAbleToRegisterWithValidInfo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@3bcd05cb]" started-at="2023-11-15T16:44:37 EST" name="tearDown" finished-at="2023-11-15T16:44:37 EST" duration-ms="116" status="PASS">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanEditPersonalInfo()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanEditPersonalInfo" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.AccountPageTest.launchBrowser(AccountPageTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanEditPersonalInfo -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="quitBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918400" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918404" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.naveenAutomationPageTest.AccountPageTest -->
+      <class name="com.naveenAutomationPageTest.RegisterAccountPageTest">
+        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="loggerSetup" finished-at="2023-11-19T15:15:18 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggerSetup -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="2023-11-19T15:15:18 EST" duration-ms="21" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNavigateToRegisterAccount()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNavigateToRegisterAccount" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNavigateToRegisterAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918451" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918456" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNotEnterInvalidTelephone()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotEnterInvalidTelephone" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNotEnterInvalidTelephone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918466" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918469" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNotSkipConfirmPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipConfirmPassword" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNotSkipConfirmPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918477" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918480" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNotSkipEmail()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipEmail" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNotSkipEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918489" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918492" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNotSkipLastName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipLastName" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNotSkipLastName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918498" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918500" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUserCanNotSkipPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipPassword" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
+Host info: host: 'VAISH', ip: '192.168.137.1'
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
+at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserCanNotSkipPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918508" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.naveenAutomationPageTest.RegisterAccountPageTest -->
-      <class name="com.naveenAutomationPageTest.ForgottenPasswordPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:36 EST" name="loggerSetup" finished-at="2023-11-15T16:42:36 EST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:36 EST" name="launchBrowser" finished-at="2023-11-15T16:42:41 EST" duration-ms="4570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserWillGetConfirmationLinkUsingValidEmail()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:41 EST" name="validateUserWillGetConfirmationLinkUsingValidEmail" finished-at="2023-11-15T16:42:42 EST" duration-ms="1894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserWillGetConfirmationLinkUsingValidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:42 EST" name="tearDown" finished-at="2023-11-15T16:42:43 EST" duration-ms="130" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:43 EST" name="launchBrowser" finished-at="2023-11-15T16:42:47 EST" duration-ms="4404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserWillNotGetConfirmationLinkUsingInvalidEmail()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:47 EST" name="validateUserWillNotGetConfirmationLinkUsingInvalidEmail" finished-at="2023-11-15T16:42:48 EST" duration-ms="1344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserWillNotGetConfirmationLinkUsingInvalidEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.ForgottenPasswordPageTest@13526e59]" started-at="2023-11-15T16:42:48 EST" name="tearDown" finished-at="2023-11-15T16:42:48 EST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.naveenAutomationPageTest.ForgottenPasswordPageTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

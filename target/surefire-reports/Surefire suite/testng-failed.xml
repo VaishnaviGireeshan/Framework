@@ -5,12 +5,26 @@
     <classes>
       <class name="com.naveenAutomationPageTest.RegisterAccountPageTest">
         <methods>
-          <include name="validateUserIsAbleToRegisterWithValidInfo"/>
+          <include name="validateUserCanNotSkipEmail"/>
           <include name="loggerSetup"/>
+          <include name="validateUserCanNotEnterInvalidTelephone"/>
+          <include name="tearDown"/>
+          <include name="validateUserCanNotSkipConfirmPassword"/>
+          <include name="validateUserCanNotSkipPassword"/>
+          <include name="validateUserCanNotSkipLastName"/>
+          <include name="launchBrowser"/>
+          <include name="validateUserCanNavigateToRegisterAccount"/>
+        </methods>
+      </class> <!-- com.naveenAutomationPageTest.RegisterAccountPageTest -->
+      <class name="com.naveenAutomationPageTest.AccountPageTest">
+        <methods>
+          <include name="loggerSetup"/>
+          <include name="validateUserCanEditPersonalInfo"/>
+          <include name="quitBrowser"/>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.naveenAutomationPageTest.RegisterAccountPageTest -->
+      </class> <!-- com.naveenAutomationPageTest.AccountPageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
