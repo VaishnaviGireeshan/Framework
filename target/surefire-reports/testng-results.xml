@@ -1,728 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="33" total="40" passed="0" failed="0" skipped="7">
+<testng-results ignored="33" total="40" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-19T15:15:16 EST" name="Surefire suite" finished-at="2023-11-19T15:15:18 EST" duration-ms="2289">
+  <suite started-at="2023-11-19T16:07:09 EST" name="Surefire suite" finished-at="2023-11-19T16:07:58 EST" duration-ms="49303">
     <groups>
     </groups>
-    <test started-at="2023-11-19T15:15:16 EST" name="Surefire test" finished-at="2023-11-19T15:15:18 EST" duration-ms="2289">
+    <test started-at="2023-11-19T16:07:09 EST" name="Surefire test" finished-at="2023-11-19T16:07:58 EST" duration-ms="49303">
       <class name="com.naveenAutomationPageTest.AccountPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:16 EST" name="loggerSetup" finished-at="2023-11-19T15:15:16 EST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@7d94beb9]" started-at="2023-11-19T16:07:09 EST" name="loggerSetup" finished-at="2023-11-19T16:07:09 EST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:16 EST" name="launchBrowser" finished-at="2023-11-19T15:15:18 EST" duration-ms="1610" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.AccountPageTest.launchBrowser(AccountPageTest.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@7d94beb9]" started-at="2023-11-19T16:07:09 EST" name="launchBrowser" finished-at="2023-11-19T16:07:15 EST" duration-ms="5841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanEditPersonalInfo()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanEditPersonalInfo" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.AccountPageTest.launchBrowser(AccountPageTest.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanEditPersonalInfo()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@7d94beb9]" started-at="2023-11-19T16:07:15 EST" name="validateUserCanEditPersonalInfo" finished-at="2023-11-19T16:07:18 EST" duration-ms="2770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanEditPersonalInfo -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="quitBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918400" status="SKIP">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@7d94beb9]" started-at="2023-11-19T16:07:18 EST" name="quitBrowser" finished-at="2023-11-19T16:07:18 EST" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@1ebea008]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918404" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.AccountPageTest@7d94beb9]" started-at="2023-11-19T16:07:18 EST" name="tearDown" finished-at="2023-11-19T16:07:18 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.naveenAutomationPageTest.AccountPageTest -->
       <class name="com.naveenAutomationPageTest.RegisterAccountPageTest">
-        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="loggerSetup" finished-at="2023-11-19T15:15:18 EST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loggerSetup()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:18 EST" name="loggerSetup" finished-at="2023-11-19T16:07:18 EST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggerSetup -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="2023-11-19T15:15:18 EST" duration-ms="21" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:18 EST" name="launchBrowser" finished-at="2023-11-19T16:07:21 EST" duration-ms="3514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNavigateToRegisterAccount()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNavigateToRegisterAccount" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNavigateToRegisterAccount()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:21 EST" name="validateUserCanNavigateToRegisterAccount" finished-at="2023-11-19T16:07:22 EST" duration-ms="909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNavigateToRegisterAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918451" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:22 EST" name="tearDown" finished-at="2023-11-19T16:07:22 EST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918456" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:22 EST" name="launchBrowser" finished-at="2023-11-19T16:07:26 EST" duration-ms="3585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotEnterInvalidTelephone()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotEnterInvalidTelephone" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNotEnterInvalidTelephone()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:26 EST" name="validateUserCanNotEnterInvalidTelephone" finished-at="2023-11-19T16:07:28 EST" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNotEnterInvalidTelephone -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918466" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:28 EST" name="tearDown" finished-at="2023-11-19T16:07:28 EST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918469" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:28 EST" name="launchBrowser" finished-at="2023-11-19T16:07:34 EST" duration-ms="5316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipConfirmPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipConfirmPassword" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNotSkipConfirmPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:34 EST" name="validateUserCanNotSkipConfirmPassword" finished-at="2023-11-19T16:07:36 EST" duration-ms="2699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNotSkipConfirmPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918477" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:36 EST" name="tearDown" finished-at="2023-11-19T16:07:36 EST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918480" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:36 EST" name="launchBrowser" finished-at="2023-11-19T16:07:42 EST" duration-ms="5785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipEmail()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipEmail" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNotSkipEmail()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:42 EST" name="validateUserCanNotSkipEmail" finished-at="2023-11-19T16:07:44 EST" duration-ms="2090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNotSkipEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918489" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:44 EST" name="tearDown" finished-at="2023-11-19T16:07:44 EST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918492" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:44 EST" name="launchBrowser" finished-at="2023-11-19T16:07:48 EST" duration-ms="3703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipLastName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipLastName" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNotSkipLastName()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:48 EST" name="validateUserCanNotSkipLastName" finished-at="2023-11-19T16:07:52 EST" duration-ms="3630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNotSkipLastName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918498" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:52 EST" name="tearDown" finished-at="2023-11-19T16:07:52 EST" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="launchBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918500" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:52 EST" name="launchBrowser" finished-at="2023-11-19T16:07:56 EST" duration-ms="4029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateUserCanNotSkipPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="validateUserCanNotSkipPassword" finished-at="2023-11-19T15:15:18 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: Unable to find handler for (POST) /session 
-Host info: host: 'VAISH', ip: '192.168.137.1'
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}]}]
-Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --incognito, --headless], extensions: []}}
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
-at com.naveenautomation.base.TestBase.initialise(TestBase.java:54)
-at com.naveenAutomationPageTest.RegisterAccountPageTest.launchBrowser(RegisterAccountPageTest.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="validateUserCanNotSkipPassword()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:56 EST" name="validateUserCanNotSkipPassword" finished-at="2023-11-19T16:07:58 EST" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserCanNotSkipPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@72d6b3ba]" started-at="2023-11-19T15:15:18 EST" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1700424918508" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naveenAutomationPageTest.RegisterAccountPageTest@560348e6]" started-at="2023-11-19T16:07:58 EST" name="tearDown" finished-at="2023-11-19T16:07:58 EST" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

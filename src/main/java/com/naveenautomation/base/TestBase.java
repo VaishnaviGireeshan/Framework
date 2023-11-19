@@ -36,7 +36,7 @@ public class TestBase {
 	public static Logger logger;
 	public WebdriverEvents events;
 
-	private static final boolean RUN_ON_GRID = false;
+	private static final boolean RUN_ON_GRID = true;
 
 	@BeforeClass
 	public void loggerSetup() {// one time setup
@@ -51,7 +51,7 @@ public class TestBase {
 
 		if (RUN_ON_GRID) {
 			try {
-				wd = new RemoteWebDriver(new URL("http://192.168.137.1:5555"), getOptions());
+				wd = new RemoteWebDriver(new URL("http://192.168.137.1:4444"), getOptions());
 			} catch (MalformedURLException e) {
 
 				e.printStackTrace();
