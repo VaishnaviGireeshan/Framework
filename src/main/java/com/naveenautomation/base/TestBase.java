@@ -35,6 +35,7 @@ public class TestBase {
 	private final Environment URL = Environment.PROD;
 	public static Logger logger;
 	public WebdriverEvents events;
+	private String browserOfChoice; 
 
 	private static final boolean RUN_ON_GRID = true;
 
@@ -48,24 +49,24 @@ public class TestBase {
 	}
 
 	public void initialise() {
-
+		browserOfChoice=System.getProperty("browserChoice");
 		if (RUN_ON_GRID) {
 			try {
-				wd = new RemoteWebDriver(new URL("http://192.168.137.1:4444"), getOptions());
+				wd = new RemoteWebDriver(new URL("http://192.168.137.1:5555"), getOptions());
 			} catch (MalformedURLException e) {
 
 				e.printStackTrace();
 			}
 		} else {
 
-			switch (BROWSER) {
-			case CHROME:
+			switch (browserOfChoice.toUpperCase()) {
+			case "CHROME":
 				wd = new ChromeDriver();
 				break;
-			case EDGE:
+			case "EDGE":
 				wd = new EdgeDriver();
 				break;
-			case FIREFOX:
+			case "FIREFOX":
 				wd = new FirefoxDriver();
 				break;
 
