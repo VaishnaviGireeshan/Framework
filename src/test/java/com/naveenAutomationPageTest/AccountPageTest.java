@@ -139,7 +139,7 @@ public class AccountPageTest extends TestBase {
 				"Recurring Payments Page, Access Failed!!!");
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void validateUserCanAccessRewardPointsPage() {
 		accountPage = loginPage.submitLogin("SamStark@gmail.com", "Sam12345");
 		rewardPointsPage = accountPage.rewardPointsPageLink(ConsumerSideNavigationBar.REWARD_POINTS);
